@@ -28,8 +28,28 @@ Abra o terminal na raiz do projeto e execute:
 mvn test
 
 ---
-## usando o intellij
-Baixe o repositorio 
-abra no intellij
-entre em cada uma das classes de teste 
-rode o test coverage
+##  Usando o IntelliJ
+1. Faça o download ou clone o repositório:
+
+```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
+```
+2. Abra o projeto no IntelliJ IDEA com File > Open... e selecione a pasta raiz do projeto.
+
+3. Vá em File > Project Structure > Project
+
+4. Navegue até o diretório de testes:
+
+```bash
+src/test/java/com/example/biblioteca/
+```
+
+Para cada classe de teste (ex: CadastroTest, UsuarioTest):
+Abra a classe no editor
+
+Clique com o botão direito do mouse sobre o nome da classe ou de um método de teste
+Escolha Run 'NomeDoTeste' with Coverage para executar os testes com análise de cobertura
+O IntelliJ mostrará:
+
+Os resultados dos testes (verdes = sucesso, vermelhos = falha)
+A cobertura de código em porcentagem, diretamente no editor (linhas destacadas)
