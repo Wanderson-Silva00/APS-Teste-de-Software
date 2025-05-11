@@ -8,7 +8,7 @@ public class CadastroTest {
 
     @AfterEach
     void limparUsuarios() {
-        // Simula reset do conjunto estático — em produção, evite isso.
+        
         Cadastro.excluirUsuario(new Usuario("Dummy", "joao@empresa.com", "Senha123"));
         Cadastro.excluirUsuario(new Usuario("Dummy", "maria@empresa.com", "Senha123"));
         Cadastro.excluirUsuario(new Usuario("Dummy", "carlos@empresa.com", "123"));
